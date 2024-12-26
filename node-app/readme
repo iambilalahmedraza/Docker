@@ -1,0 +1,56 @@
+// All Commands of Docker ....
+
+// To Create an Image
+// docker image build -t myimage .
+
+//To see Image
+// docker image ls
+
+//To create container and Run myimage
+//docker container run myimage
+
+//To run existing container
+//docker container start (container id)
+
+//To stop container
+//docker container stop (container id)
+
+// To stop image
+// docker container stop myimage
+
+//To list all containers
+//docker container ls -a
+
+//To enter in docker shell
+//docker container exec -it (container id) sh
+
+//To see all file in container after entering in shell
+//ls
+
+//TO exit from shell
+//exit
+
+//To give docker a name
+//docker container run --name mycontainer myimage
+
+//To run docker in background
+//docker container run -d --name mycontainer myimage
+
+//To start existing container in background
+//docker container start -d mycontainer
+
+//To run on port
+// docker container run -d -p 3001:3000 --name newcontainer myimage
+
+//how to rename docker container
+// docker rename oldcontainer newcontainer
+
+//how to push to docker hub
+// docker image build -t iambilalahmedraza/express:dev .
+// docker push iambilalahmedraza/express:dev
+
+//how to pull from docker hub
+// docker pull iambilalahmedraza/express:dev  
+
+//how to save pulled image to tar file
+// docker save -o express.tar iambilalahmedraza/express:dev

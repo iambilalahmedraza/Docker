@@ -1,0 +1,17 @@
+{
+  "name": "docker-1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node Server.js",
+    "dev": "nodemon -L Server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9"
+  }
+}
